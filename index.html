@@ -72,9 +72,9 @@
  </style>
 </head>
 <body>
- <audio autoplay loop>
-  <source src="https://www.example.com/music.mp3" type="audio/mp3" />
- </audio>
+<audio controls autoplay loop>
+  <source  id="bgm" src="bingbian.mp3" >
+</audio>
  <h1>对不起</h1>
  <p>，我真的很抱歉。我知道我做错了，我伤害了你，这是我从心底内的歉意。我不能换过去，但我要保证未来的我们只有快乐。</p >
  <button>原谅我吧，给我一个机会</button>
@@ -86,6 +86,15 @@
      }
      // 如果密码输入正确，则进入网页
      alert("密码正确！");
+	 var bgm = document.getElementById('bgm');
+	 
+	 function playBGM() {
+	   bgm.play();
+	 }
+	 
+	 function pauseBGM() {
+	   bgm.pause();
+	 }
  </script>
 </body>
 </html>
